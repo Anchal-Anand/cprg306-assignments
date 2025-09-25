@@ -1,5 +1,5 @@
-export default function Item({ item }) {
-  const { name, quantity, category } = item;
+export default function Item(props) {
+  const { name, quantity, category } = props.props; // notice props.props
 
   return (
     <li className="bg-[#1e293b] text-white p-4 mb-4 rounded shadow">
