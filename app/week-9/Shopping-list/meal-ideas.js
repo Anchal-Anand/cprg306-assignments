@@ -40,7 +40,11 @@ export default function MealIdeas({ ingredient }) {
       <h2 className="text-2xl font-bold text-blue-500 mb-2">Meal Ideas</h2>
 
       {!ingredient && <p>Select an item to see meal ideas.</p>}
-      {ingredient && <p>Meals with "{ingredient}":</p>}
+      {ingredient && (
+        <p>
+          Meals with &quot;{ingredient}&quot;:
+        </p>
+      )}
 
       <div className="grid grid-cols-2 gap-3 mt-3">
         {meals.map((meal) => (
